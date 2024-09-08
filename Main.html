@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Frame</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="Script.js" defer></script>
+</head>
+<body>
+    <header>
+        <section id="logo-section">
+            <img src="logo.png" alt="Amazon Logo" class="logo">
+        </section>
+
+        <section id="search-bar">
+            <form action="#" method="get">
+                <select name="category" id="category">
+                    <option value="all">All</option>
+                </select>
+                <input type="text" placeholder="Search Amazon" id="search-input">
+                <button type="submit" id="search-button">
+                    <img src="search.png" alt="Search Icon">
+                </button>
+            </form>
+        </section>
+
+        <section id="account-section">
+            <p><img src="langs.png" alt="Language"></p>
+            <p><span>Hello, Sign in</span><strong>Account & Lists</strong></p>
+            <p><span>Returns</span><strong>& Orders</strong></p>
+            <p><img src="cart.png" alt="Cart Icon"></p>
+        </section>
+    </header>
+
+    <nav class="second-navbar">
+        <ul>
+            <li><a href="#"><img src="menu.png" alt="Menu Icon"> All</a></li>
+            <li><a href="#">Today's Deals</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Registry</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Sell</a></li>
+            <li class="right-aligned"><a href="#">Shop the Gaming Store</a></li>
+        </ul>
+    </nav>
+
+    <section class="notification-bar">
+        <p>We are experiencing shipping delays in your area. Please expect extended delivery time.</p>
+    </section>
+
+    <section class="product-promotion-bar">
+        <a href="#">
+            <img src="thierdbar.png" alt="Product Promotion">
+        </a>
+    </section>
+
+    <main>
+        <aside class="thumbnail-images">
+            <ul>
+                <li><img src="First.png" alt="Thumbnail 1" onmouseover="changeMainImage('first.png')"></li>
+                <li><img src="second.png" alt="Thumbnail 2" onmouseover="changeMainImage('second.png')"></li>
+                <li><img src="thierd.png" alt="Thumbnail 3" onmouseover="changeMainImage('thierd.png')"></li>
+                <li><img src="fourth.png" alt="Thumbnail 4" onmouseover="changeMainImage('fourth.png')"></li>
+                <li><img src="fiveth.png" alt="Thumbnail 5" onmouseover="changeMainImage('fiveth.png')"></li>
+                <li><img src="360.png" alt="360 View Icon" class="icon-image"></li>
+            </ul>
+        </aside>
+
+        <section class="main-image">
+            <img id="main-image" src="First.png" alt="Main Product Image">
+        </section>
+
+        <section class="product-details">
+            <h2>Amazon Basics 24” IPS Monitor | Powered with AOC Technology | FHD 1080P | HDMI, Display Port and VGA Input | VESA Compatible | Built-in Speakers | Black | for Office and Home</h2>
+            <div class="ratings">
+                <a href="#">Visit the Amazon Basics Store</a><br>
+                4.5 ⭐⭐⭐⭐⭐<a href="#">600 ratings | </a><a href="#">Search this page</a>
+                <img src="arrow.png" class="arrow">
+            </div>
+            <img src="amazonchoice.png" alt="Amazon's Choice">
+            <p>3K+ bought in past month</p>
+            <img src="small-line.png">
+            <p class="price">$79.99</p>
+            <p class="shipping">$38.17 Shipping & Import Fees Deposit to Israel <a href="#">Details <img src="arrow.png" class="arrow"></a></p>
+            <p class="shipping">Available at a lower price from <a href="#">other sellers</a> that may not offer free Prime shipping.</p>
+            <p>Size: <strong>24-Inch</strong></p>
+            <div class="size-options">
+                <button class="selected">24-Inch
+                    <span class="price">$79.99</span>
+                </button>
+                <button>27-Inch
+                    <span class="price">$97.38</span>
+                </button>
+            </div>
+            <div class="product-specs">
+                <p><strong>Brand</strong><span class="spacing1">Amazon Basics</span></p>
+                <p><strong>Screen Size</strong><span class="spacing1">24 Inches</span></p>
+                <p><strong>Resolution</strong><span class="spacing1">FHD 1080p</span></p>
+            </div>
+        </section>
+        <aside class="product-sidebar">
+            <p class="price">$79.99</p>
+            <p class="shipping">
+                $38.17 Shipping & Import Fees Deposit to Israel <a href="#">Details <img src="arrow.png" class="arrow"></a>
+            </p>
+            <p class="delivery-info">
+                Delivery <strong>September 26 - October 2</strong> <br>to Israel<br>
+                Or fastest delivery <strong>Thursday, September 19</strong>
+            </p>
+            <p class="location">
+                <img src="delivertoisrael.png" alt="Location icon">
+            </p>
+            <p class="availability">In Stock</p>
+
+            <label for="quantity-select">Quantity: 
+                <select id="quantity-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+
+            <div class="action-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+
+            <ul class="additional-info">
+                <li>Ships from <strong>Amazon.com</strong></li>
+                <li>Sold by <strong>Amazon.com</strong></li>
+                <li>Returns: <a href="#">30-day refund/replacement</a></li>
+                <li>Support: <a href="#">Product support included</a></li>
+                <li>Gift options: <a href="#">Add a gift receipt for easy returns</a></li>
+            </ul>
+            <div class="gift-receipt-option">
+                <input type="checkbox" id="gift-receipt" name="gift-receipt">
+                <label for="gift-receipt">Add a gift receipt for easy returns</label>
+            </div>
+            <button class="add-to-list">Add to List</button>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Amazon.com, Inc.</p>
+    </footer>
+</body>
+</html>
